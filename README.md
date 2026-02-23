@@ -52,6 +52,18 @@ PulseFeed solves this by aggregating across 8 exchanges with outlier detection, 
             └──────────────┘  └────────────┘  └────────────────┘
 ```
 
+## Exchange Latency
+
+WebSocket update frequency varies by an order of magnitude across exchanges. Bybit and Binance push updates at 50-100ms intervals, while Coinbase and Gemini are trade-driven (~1s). The aggregator weights all sources equally but uses staleness detection to drop feeds that fall behind.
+
+![WebSocket Update Frequency by Exchange](docs/figures/exchange_latency.png)
+
+## Aggregation Pipeline
+
+Eight exchange prices are normalized (USDT premium removed), filtered for staleness, and reduced to a single median price with confidence scoring. Outliers beyond 2 standard deviations are rejected before aggregation.
+
+![Multi-Exchange Price Aggregation Pipeline](docs/figures/aggregation_pipeline.png)
+
 ## Key Features
 
 | Feature | What It Does | Why It Matters |
