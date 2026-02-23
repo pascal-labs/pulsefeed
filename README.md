@@ -1,10 +1,10 @@
 # pulsefeed
 
-Real-time, multi-exchange crypto market data aggregation pipeline with tick-level capture and cross-exchange divergence detection.
+Real-time, multi-exchange crypto market data aggregation pipeline with tick-level capture and cross-exchange divergence detection. Supports **BTC, ETH, SOL, and XRP** across 8 exchanges.
 
 ## Overview
 
-PulseFeed connects to 8+ cryptocurrency exchanges simultaneously via WebSocket, aggregates prices with outlier detection and USDT premium normalization, and provides a unified price feed with confidence scoring. Includes Chainlink oracle comparison for lead-lag signal generation.
+PulseFeed connects to 8+ cryptocurrency exchanges simultaneously via WebSocket, aggregates prices with outlier detection and USDT premium normalization, and provides a unified price feed with confidence scoring across multiple assets (BTC, ETH, SOL, XRP). Includes Chainlink oracle comparison for lead-lag signal generation.
 
 ## Architecture
 
