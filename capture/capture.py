@@ -105,7 +105,7 @@ def get_capture_coverage(data_dir: Path) -> dict:
                         match = re.search(r'-(\d+)$', slug)
                         if match:
                             windows[match.group(1)] += 1
-        except:
+        except Exception:
             continue
 
         if windows:

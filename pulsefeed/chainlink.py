@@ -99,7 +99,7 @@ class ChainlinkFeed:
         if self._ws:
             try:
                 self._ws.close()
-            except:
+            except Exception:
                 pass
         if self._thread:
             self._thread.join(timeout=2)

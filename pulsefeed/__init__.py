@@ -2,7 +2,7 @@
 PulseFeed: Multi-Exchange BTC Price Aggregator
 
 Drop-in replacement for BTCPriceFeed with:
-- Aggregated price from 5 exchanges (Binance, Coinbase, Kraken, OKX, Bybit)
+- Aggregated price from 8 exchanges (Binance, Coinbase, Kraken, OKX, Bybit, Gemini, KuCoin, Gate.io)
 - Cross-exchange divergence detection
 - Confidence scoring
 - Manipulation alerting
