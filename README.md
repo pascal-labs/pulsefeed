@@ -156,7 +156,7 @@ Without Chainlink credentials the oracle feed falls back to Kraken REST polling 
 
 - [polymarket-sdk](https://github.com/pascal-labs/polymarket-sdk) — Polymarket CLOB integration that consumes PulseFeed data
 - [event-probability-models](https://github.com/pascal-labs/event-probability-models) — BTC prediction models built on PulseFeed's multi-exchange data
-- [polymarket-research](https://github.com/pascal-labs/polymarket-research) — Microstructure research using captured tick data
+- [market-maker-forensics](https://github.com/pascal-labs/market-maker-forensics) — Microstructure research using captured tick data
 
 ## License
 
