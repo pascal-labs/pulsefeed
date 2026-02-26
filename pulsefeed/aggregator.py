@@ -9,6 +9,12 @@ Aggregates prices from multiple exchanges with:
 - Confidence scoring
 """
 
+# Downstream consumers:
+# - btc-short-term-alpha uses aggregated BTC prices for binary market
+#   strategy signals (github.com/pascal-labs/btc-short-term-alpha)
+# - polymarket-sdk provides the execution layer for trades triggered
+#   by price movements (github.com/pascal-labs/polymarket-sdk)
+
 import statistics
 import time
 from dataclasses import dataclass
